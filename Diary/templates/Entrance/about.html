@@ -1,0 +1,159 @@
+{% extends "diaryBase.html" %}
+{% load static %}
+
+
+<!-- head -->
+{% block headerPic %}
+    {% static 'img/wave.jpg' %}
+{% endblock %}
+
+{% block customCSS %}
+    <link href="{% static 'css/diaryDetail.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'css/diaryDetailMQ.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+<!--body-->
+{% block title %}
+    {{ object1.title }}
+{% endblock %}
+
+{% block titleContsnts %}
+    <div class="title">
+        <h1>{{ object1.title }}</h1>
+        <div class="info">
+            <div class="date">
+                <span>作成日 : {{ object1.postdate }}  </span><br>
+                <span>更新日 : {{ object1.updateDate }}  </span><br>
+            </div>
+            <div class="pV">
+                {{ object1.pageView }}pV
+            </div>
+        </div>
+        <div class="diffusion">
+            <div class="Tw">
+                <a href="https://twitter.com/intent/tweet?text={{ object1.title }} a">
+                    <div class="TwDiff">
+                        <i class="fab fa-twitter fa-2x whiteLogo"></i>
+                    </div>
+                </a>
+                <!-- https://qiita.com/bm0521/items/39ae81e2ba01c9d3e0bd --->
+            </div>
+            <div class="Fcb">
+                <div class="FcbDiff">
+                    <i class="fab fa-facebook-f fa-2x whiteLogo"></i>
+                </div>
+            </div>
+            <div class="LINE">
+                <div class="LINEDiff">
+                    <img src="{% static 'img/LINE.png' %}">
+                </div>
+            </div>
+            <div class="HTN">
+                <div class="HTNDiff">
+                    <img src="{% static 'img/HATEBU.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block contentsSection %}
+    <!--blogListとblogDetail,about, contactはcontentsSectionの中身が違ってくるので区別します-->
+    <div class="detail">
+        {{ object1.content | safe }}
+        {% if object1.link is not Null %}
+            <a href="{% url 'detail' object1.link %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink0.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink0.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink0.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {{ object1.content2 | safe }}
+        {% if object1.link2 is not Null %}
+            <a href="{% url 'detail' object1.link2 %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink1.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink1.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink1.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {{ object1.content3 | safe }}
+        {% if object1.link3 is not Null %}
+            <a href="{% url 'detail' object1.link3 %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink2.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink2.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink2.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {{ object1.content4 | safe }}
+        {% if object1.link4 is not Null %}
+            <a href="{% url 'detail' object1.link4 %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink3.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink3.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink3.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {{ object1.content5 | safe }}
+        {% if object1.link5 is not Null %}
+            <a href="{% url 'detail' object1.link5 %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink4.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink4.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink4.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block reverse %}
+    {% url 'blog' %}
+{% endblock %}

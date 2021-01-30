@@ -1,0 +1,289 @@
+id,title,advertising,contentDescription,postdate,updateDate,category,eyeCatch,pageView,introduction,content,link,content2,link2,content3,link3,content4,link4,content5,link5
+【FIRE】2020年12月 FIRE経過報告,Other,<p>FIRE達成に向けて、舵を切ったヘッポコサラリーマンの奮闘記 第一話！！<br></p>,2021-01-23,2021-01-23,FIRE,static/img/AS20201206000430_comm_GTfdRlL.jpg,26,"<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                やぁ。叢咲(むらさき)だ。FIREを達成すると決めてから1ヶ月が経過した。<br>ここでは、そんな自分の現在の状況をまとめつつ 今後の施策についても紹介していくぞ。
+            </div>
+</div>
+<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+               煉獄さんの画像をアイキャッチに使ったのなんでですか？笑
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                FIREと言ったら、炎の呼吸だろう。 という短絡的な思考に基づいている。
+            </div>
+</div>
+<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+               (まぁ、そうだろうな...)
+            </div>
+</div>","<h2>FIRE奮闘記 2020年12月収支報告</h2><p>こんにちは！いよいよ2020年も終わりを迎えようとしています。今年はいいニュースがなさすぎて、流石に心配になっちゃうレベルの1年間でした笑</p><p>さて、ついに動き出したFIRE計画ですが その第1弾として2020年12月の収支報告をいたします。</p><p>「いやいや、FIREって何やねんw」って思った方もいるのではないでしょうか。今年は鬼滅の刃フィーバーが巻き起こった1年間でした。そのため、ひとまず煉獄杏寿郎さんにアイキャッチ画像をやってもらいました。</p><p>FIREについてよくわからん という方のためにリンクを用意いたしました。</p><p><b><span style=""font-size: 18px;"">「よもや よもやだ！！」</span></b></p>
+
+<h2>今月までの資産総額 支出 貯蓄</h2>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-30/0bb6a1ea-a4d3-4a30-b709-a3f1467ffc57.png"">
+</div>
+<p>上記のグラフは、左から「資産総額」「支出と収入」「貯蓄率」です。Pythonのライブラリ matplotlib で描画しています。いずれもFIRE達成のために注視すべき項目です。まずはこれらについて確認致します。</p>
+<div class=""H3"">
+<h3><span>資産総額</span></h3>
+</div>
+<p>まずは資産総額です。今年の4月に社会人として歩を進めた私ですが、2020年4月以降 堅調に資産額を増大させています。</p><p>ここで注意すべきなのは<b>「資産は全て預貯金である」</b>という点です。</p><p>私自身、FIREについての書籍を3冊ほど購入し色々調べていたのですが その間どうしても証券口座を開設する気になりませんでした。そのため、しばらくは預貯金をベースに資産を保持していました。</p><p>しかし、今月に入り やっと楽天の証券口座を開設しました。<b>まずはつみたてNISAから開始</b>することにします。</p><p>この資産の内訳ですが、<b>90万円は生活防衛資金として 現金のままキープ</b>していこうと思います。私の生活コストですが、月に15万円あればヨユーで生活できることが判明しています。そのため、半年間ニートになっても生きていけるように90万円は絶対に動かさない現金として蓄えておきます。</p><p><br></p>
+<div class=""H3"">
+<h3><span>支出&amp;収入</span></h3>
+</div>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-30/dd60dbf6-0a06-4782-b2c4-e0db624d54af.webp"">
+</div>
+<p>続いて、支出&amp;収入です。今月はボーナスも入ったため本業の収入が60万円を超えました。新卒は年に1回しか賞与がありませんが、来年は2回になります。</p><p>また、今月は大きな出費はありませんでした。強いて言うなら、在宅勤務用のヘッドセット(Quantum800)でしょうか。</p><p>こちらは19800円しましたが、音声も抜群によくノイズキャンセリングもついていて非常に使い勝手がいい商品だったためいい投資だったと考えています。</p><p>少し寂しいですが、今年は忘年会と言うものが世間的に憚れる感じだったので2回しかしていません。そのため、出費を抑えられた部分もあったのかもしれません。</p>
+<div class=""H3"">
+<h3><span>貯蓄率</span></h3>
+</div>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-30/70d96032-e18f-468e-bd2b-a2949a7c088a.png"">
+</div>
+<p>今月はボーナスも入ったこともあり、貯蓄率は78%でした。理論上は3%の利回り程度でも10年未満でFIREを達成できますが、まぁ今月は例外でしょう。もう少し収入を上げないとキツいのかな と言うのが正直なところです。</p>
+
+<h2>1年間の総括と達成までの年数</h2><p>さて、年末ということもありいい機会なのでFIRE達成の年数を求めました。結果が以下の通りです。</p>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-30/756aad1a-fd4b-4d3e-b3c3-f7c7927ecfc1.png"">
+</div>
+<p><span style=""font-size: 24px;""><b>死にてぇ〜〜〜！！！</b></span><span style=""font-size: 14px;"">﻿ってのが正直な感想です笑笑</span></p><p><span style=""font-size: 14px;"">4000万円程度が私のFIRE達成に必要な資金だと</span>予想していましたが、当たりでしたね。今の収入だと<b>ゴールまでに32年かかる</b>ことが判明いたしました。</p><p>しかし、まとまった収入があったのは4月からなので 上記の値は今年の4月にはもう少し改善されていることでしょう。</p><p>2020/4~2021/3の区間で年収は330万円程度であることがわかりました。また、利回りを考慮せずに達成することが期待される年数を雑に求めただけなので、もう少し状況はよくなるでしょう。</p><p>それにしてもひどいですね笑</p><p>来年は副業を開始して、少しでも収益を上げる&amp;青色申告等の節税対策で状況を好転させようと思います。</p>",,,,,,,,,
+【FIRE】知らなきゃ損！ 経済的自由を目指す思想について考えてみよう,Other,<p>「働くの面倒臭いな...」「満員電車やだな...」「もっと自由な時間が欲しいな...」</p><p>そう考えたことがあるあなたにぜひ知って欲しい FIREという思想について、基礎から解説していきます！！</p>,2021-01-23,2021-01-23,FIRE,static/img/bittcoin_EJe8H8K.jpg,14,"<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+               働きたくねぇ...
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                やぁ。絵に描いたようなクソニート君。どうしてそんなに働きたくないんだ？
+            </div>
+</div>
+<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+               面倒臭いからっすね。なんで1日の大部分を差し出さなきゃいけねーんだ って話よ。
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                まぁ気持ちは分からんでもない。かといって、働かないで生きる方法について、どの程度調べたんだ？
+            </div>
+</div>
+<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+               え。あるの？そんなの
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                ふふっ。しょうがないな。今日はこの「働かないで生きていく」思想""FIRE""について話そう。
+            </div>
+</div>","<h2>自由が欲しいけど 働くのが普通なオトナたち</h2>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-22/99aa23c8-0149-49e2-b19c-7a28acfb12f4.jpg"">
+</div>
+<p>毎朝会社に向かって、やりたくない仕事に向き合って、 死んだ顔で満員電車に乗って、 好きでも何でもない上司に頭をペコペコさせて... 社会人になりたくない学生 あるいは 社会人やめたい社会人はどこにでもいるのではないでしょうか。</p><p>私もその一人です。</p><p>初めは「社会人上等！！」おれの1日8時間も持っていくなら、相応に成果出してやるぜ！！ くらいに思っていました。</p><p>そんな私は20卒の世代です。そうです。入社するやいなや新型コロナウイルスの影響をモロにくらっちゃいまして、会社には3回しか行ってません...</p>
+
+<div class=""twitter-tweet"">
+<div class=""twitter-tweet twitter-tweet-rendered"" style=""display: flex; max-width: 550px; width: 100%; margin-top: 10px; margin-bottom: 10px;""><iframe id=""twitter-widget-0"" scrolling=""no"" frameborder=""0"" allowtransparency=""true"" allowfullscreen=""true"" class="""" style=""position: static; visibility: visible; width: 550px; height: 294px; display: block; flex-grow: 1;"" title=""Twitter Tweet"" src=""https://platform.twitter.com/embed/index.html?dnt=false&amp;embedId=twitter-widget-0&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1341388553687863297&amp;lang=en&amp;origin=http%3A%2F%2F127.0.0.1%3A8000%2Fsummernote%2Feditor%2Fid_content%2F&amp;theme=dark&amp;widgetsVersion=ed20a2b%3A1601588405575&amp;width=550px"" data-tweet-id=""1341388553687863297""></iframe></div> <script async="""" src=""https://platform.twitter.com/widgets.js"" charset=""utf-8""></script>
+</div>
+
+<p>同期とは仲良くなれないし、いつも自宅でPC叩く毎日、リモートで飛んでくる無機質な司令... いつしか「1日8時間働くのはムリだわ笑」ってなりました。そんな中、出会ったのがFIREムーブメントだったのです。</p><p>FIREムーブメントとは、誤解を恐れずに短く説明すると「早期リタイヤして逃げ切ろうぜ！！」っていう考え方です。今の私には深く突き刺さる言葉でした。僕は早速、FIRE達成に向けて方向を切り替えることにしたのです。</p><h2>この記事で何を得られるか？</h2><p>まず最初に、この記事を読むことで得られるメリットについて説明します。</p>
+<div class=""index"">
+<ol><li>FIRE について概要を理解できる</li><li>FIREを達成することで得られるメリットがわかる</li><li>FIREを達成するための大まかなゴールがわかる</li></ol>
+</div>
+<p>もしかしたら、胡散臭いと感じている人も多いでしょう。私もそうでした笑 </p><p>ですが、調べれば調べるほど、現実味をもった説得力と「頑張れば実現できるかもしれない」という期待感を持てるだけの内容でした！まずはFIREの概要を知って、どんなものなのか把握してしまいましょう！！</p>
+<div class=""H3"">
+<h3><span>1. FIREの概要</span></h3>
+</div>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-22/2d37acff-9c23-41c6-a346-882b9f281e29.jpg"">
+</div>
+<br><p>そもそもFIREって何でしょうか？FIREとはFinancial Independent and Retire Earlyの略で、直訳すると「経済的独立と早期リタイヤ」を表しています。</p><p>経済的独立とは、自分の人生を労働時間として差し出さずとも経済的理由で人生が詰んでしまわない状態を指します。つまり、<b>必要な金額をさっさと溜めようぜ！！</b> ってことです。</p><p>実は、<b>重要なのは貯金額ではなく<span style=""background-color: rgb(255, 255, 255);"">貯蓄率</span>である</b>ことをのちに解説します。</p><p>早期リタイヤとは、文字通りで<b>定年前に退職すること</b>を指します。</p><p>多くの人は定年まで勤め上げてから、年金をもらって残りの人生を生きることになると思います。しかし、2000万円問題にも象徴されるように、我々日本人の状況は今後益々悪くなっていくことが予想されます。</p><p>定年を迎えるより先に、磐石な資産と不動の金融リテラシーを身につけ 安全に勝ち逃げよう という算段です。</p>
+<div class=""H3"">
+
+<h3><span>2. FIREの達成を目指すメリット</span></h3>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-22/e0ec8f94-5c50-4fa3-925f-248d3864aac6.jpg"">
+</div>
+
+</div>
+<p>FIRE達成を目指すと、一体どんないいことが起こるのでしょうか。はっきり言って、いいことしかないです笑</p><p>理由は至ってシンプルで、<b>日本人は義務教育で金融に関することをほとんど学んでいないため</b>です。言い換えれば、ちょっと学んで実践を繰り返すことで、<b>簡単に周囲の人間より頭ひとつ抜き出ることができる</b>ということです。</p><p>人生で、受験だの就活だので多くの人が競争してきたと思いますが、 これらとは違い 金融の勉強って競合がめっちゃ少ないんですよね。つまり、努力すればするほど簡単に差を付けられるんです。</p><p>僕は決してFIREを達成せよ とは言ってません。僕自身達成にはまだまだ程遠いのに、偉そうなことを言えるはずがありませんw しかし、FIRE達成のために培った物が私たちの人生をより豊かにしてくれることは間違いありません。古文漢文で「ラ行変格活用」をお勉強するよりもはるかに役立ちます。</p>
+<h4>メリット1. 金融の知識が身に付く</h4>
+<p>繰り返しになってしまいますが、日本人は金融の教育を行いません。神聖な教育の場にお金の話を持ち込むことがキタナイと思われているようです。お金で人生詰んじゃう人いるのに 大丈夫なんでしょうか。</p><p>競合が比較的少ないので、相対的に成果が出やすいのもポイントです。</p>
+<h4>メリット2. 悪人に騙されなくなる</h4><p>よくYouTubeの広告とかで「確実に儲かる方法！」とか「月収7桁余裕です」とか「利回り 脅威の20%越え！！」とかあるけど 流石に嘘だってことは誰にでもわかりますよね？？？</p><p>でも、騙される人がいるから、詐欺師は元気イッパイなんですよね。シェアリングカモノミーって言葉知っていますか？ <b>騙される人は1回のみならず 何回も騙されるので、詐欺師の中でカモリストがシェアされている</b>らしいですよwww</p><p>これらの嘘(あるいは、多くの人にとって実現不可)もFIREの勉強を行う過程でわかってくると思います。</p><h4>メリット3. 人生にゆとりができる</h4><p>FIREを達成できずとも、その勉強や実践を通じて得られたものが大きな財産になります。</p><p>将来の不安とか、教育コストの相場とか、<b>あらゆる面でFIRE実現に向けて努力した積み上げが役にたつ</b>でしょう。</p><p>自分だけじゃありません。経済的な余裕は自分の心にゆとりを持たせてくれます。結局、心の余裕は周りの人に伝わるので 人間関係もよくなっていきます。「家賃が3万円分浮いた〜💞」とかでいいんです。学んだことは必ず役に立ち、自分の人生を確実に前向きにしてくれます。</p>
+<div class=""H3"">
+<h3><span>3. FIRE達成に必要なものは？</span></h3>
+</div>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-22/f6990ec2-039d-4029-b291-6b52e414c145.jpg"">
+</div>
+<br><p></p><p>さて、ここまで聞いて多少なりともFIREに興味を持っていただけたのではないでしょうか。ここで気になるのは、FIRE達成のために 具体的にどれくらいの金額が必要なの？ ということでしょう。</p><p>それには、明確な答えがあります。社会情勢で数字は多少前後すると思われますが、それでも目安として十分に機能すると思います。</p><h4>1. FIRE達成に必要な年数</h4><p>FIRE達成のためには、それなりに稼ぎがないとダメなのでは...？？？ と思うかもしれません。</p><p>しかし、実は <b>重要なのは年収ではなく貯蓄率</b>です。</p><p>以下のグラフをご覧ください。</p>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-28/1454cac8-fe55-4bf7-9b87-31225c5b12b3.png"">
+</div>
+<p>貯蓄率が60%ならば、投資リターンが1~10%の範囲でも10年前後でリタイヤできます。逆に、貯蓄率が5%だと、投資リターンが10%だとしても40年以上かかります。投資リターンが1%だと、グラフからはみ出してしまっています。</p><p>そうです。貯蓄率が高ければ高いほど <b>投資リターン&amp;年収に関係なく早い時期にFIREを達成することができる</b>のです。</p><p>こんなの胡散臭いよ。嘘でしょ と思ったあなた。実は上記のグラフですが、高校数学で簡単に示せます。興味のある方はぜひ 手を動かしてみてください。以下のリンクに導出をおせておきます。</p>
+
+<p>さて、いきなり50%以上も貯蓄に回せ なんて言われても「無理だよ...」って声が聞こえてきそうです。でも、本当に無理なのでしょうか？ <b>今まで、生活の質を全く下げずに支出を抑える方法を本気で検討した方はどのくらいいるのでしょうか？？？</b>&nbsp;</p><p>生活の質を下げずに貯蓄率を上げる方法、いくらでもあります。50%以上の貯蓄率を達成できずとも、以前よりも貯蓄率を格段に上げる方法があります。ぜひチェックしてみてください。</p><h4>2. FIRE達成に必要な金額</h4>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-22/893717dd-f1f2-4384-ae57-630181aac613.jpg"">
+</div>
+<p>さて、最後に FIREを達成するために必要な(最終的な)金額についてお話しいたします。こちらはあまり重要ではありません。FIRE達成に必要な年数を全うしたら、いくら手元に残っているのかを話すだけです。</p><p>答えはズバリ<b>「自分の年間支出の25倍」</b>です。</p><p>自分の貯蓄率を決めて、それを守り続ければ グラフで表示された年数後に 自分の支出の25倍の金額が資産として残ることになります。</p><p>ここまで達成すれば、<b>毎年利子だけで生活をし 本来労働していたはずの時間を全て自由なように使って良いことになります。</b>お疲れ様でした！！</p>
+<h2>まとめ</h2><p>いかがだったでしょうか？</p><p>これまでの話を聞いて、うさんくせーな って思った方も多いかもしれません。しかし、勉強してみれば FIRE達成までは難しくても 生活に余裕が生まれる程度なら誰でも達成可能です。</p><p>この記事を読んで、少しでもFIREを目指したい人が増えてくれれば嬉しいです！！</p>",,,,,,,,,
+【FIRE】知らなきゃ損！ 元本を減らさずに安心してお金を切り崩す方法(トリニティスタディ),Other,<p>溜まった資金を切り崩して、老後の生活を送りたい。でも、どうせなら子供や孫にお金を残したい... 資産運用だけで人生逃げ切りたい... そんな方に朗報です。お金を減らさずに資産を切り崩す方法が研究されています。</p>,2021-01-23,2021-01-23,FIRE,static/img/money-2724241_1280_cJyP2VH.jpg,6,"<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                あー。働きたくねぇ。
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                ...大丈夫か？？？ てゆーか、働いてないだろwww
+            </div>
+</div>
+<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                まぁそうなんだけどさ。今の生活が永遠に続かないかな って思って。でも、いつかお金が尽きて詰んじゃうでしょ？ 結局働かないといけないのかな って思うと憂鬱でさ。
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                なんだ、そんなことか。だったらいい方法があるぞ。「今の資産をどのくらいの割合で切り崩せば資産を0にしないで済むか」という研究がある。これを使えば永遠にお金は尽きずに切り崩せるぞ。
+            </div>
+</div>
+<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+               まじっすか。社長！！はやく教えてください！！
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                よかろう。(社長じゃねーし）
+            </div>
+</div>","<h2>お金を切り崩して生活できる...？？？</h2><p>今はバリバリ働いていても、将来年金生活が始まります。その時、きっと貯蓄を少なからず切り崩す生活が始まることでしょう。しかし、どのようにお金を切り崩せばいいか 悩みどころですよね。</p><p>「使いすぎたら、貯蓄なくなって詰んじゃうんじゃ...」</p><p>「でも、仕事終えたら セカンドライフは充実させたい...」</p><p>そんな悩みを持つあなたに朗報です。実は、どのくらいならお金を切り崩しても 元本割らずにイケるのかを調べた研究があります。</p><p>また、このブログの著者は 働かないで自由に生きていくためのムーブメント""FIRE""の実践者でもあります。そのため、働かないで生きていきたい人にとっても 今回の研究は一つの指標を与えてくれるでしょう。</p><p>まず、この記事を読むメリットを紹介します。</p>
+<div class=""index"">
+<ol><li>将来、どのようにお金を切り崩せば良いかわかる</li><li>投資しながらお金を切り崩す選択肢が手に入る</li><li>FIREを目指す人は 目標資金達成後どのようにお金を切り崩せば良いかの目安がわかる</li></ol>
+</div>
+<p>あああ</p>",,,,,,,,,
+【高校数学】対数&等比級数でわかる！ 働かないで生きていくために必要な金額の導出,Other,<p>高校生にとって、働くオトナはどう見えているでしょうか。昨今のニュースなどで報じられているように、ブラック労働などを耳にしていてあまり良い印象を持っていないかもしれません。でも働かないで済む金額を計算で求められるとしたら...？？？</p>,2021-01-23,2021-01-23,MathPhys,static/img/cheers-839865_1280_KKyRHsD.jpg,32,"<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+               ...。
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                今日はやけに元気ないな。クソニート君。何かあったのか？
+            </div>
+</div>
+<div class=""balloon-set-box right"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/530d21af-5fa9-4b76-9656-553bbe1ce500.png"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+               それが、今の貯蓄だとニート生活 残り1ヶ月無いくらいみたいでさ。もっと貯蓄があれば、永遠に働かずに済んだのにな って思うと憂鬱で。
+            </div>
+</div>
+<div class=""balloon-set-box left"">
+            <div class=""icon-box"">
+                <img src=""/media/django-summernote/2021-01-23/c1df0e9b-5bae-4178-95a0-40048f7da1a0.jpeg"" class=""icon"">
+            </div>
+            <div class=""balloon"">
+                君は何か勘違いしているな。働かないで生きていくために必要なのは、貯蓄でも年収でもないぞ。
+            </div>
+</div>","<p></p><p></p><h2>社会人闇深すぎwww</h2>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-23/2a43b75c-df5d-460d-8373-086bdaa6010c.jpg"">
+</div>
+<p>高校生にとって、社会人はどう映っていますか？？？ニュースなんかでよく聞く「ブラック企業」「ブラック労働」のようなネガティブワードの数々。</p><p>今教わっている先生も、そのブラックな労働に耐えながら働いているのかもしれません。</p><p>みなさん、学校の先生に迷惑かけちゃダメですよ...？？？ ただでさえ忙しいのに、モンスターペアレンツとかプログラミング教育とかSDGsとか 次から次へと新しいことを要求されてるんです。</p>
+<div class=""twitter-tweet twitter-tweet-rendered"" style=""display: flex; max-width: 550px; width: 100%; margin-top: 10px; margin-bottom: 10px;""><iframe id=""twitter-widget-0"" scrolling=""no"" frameborder=""0"" allowtransparency=""true"" allowfullscreen=""true"" class="""" style=""position: static; visibility: visible; width: 550px; height: 269px; display: block; flex-grow: 1;"" title=""Twitter Tweet"" src=""https://platform.twitter.com/embed/index.html?dnt=false&amp;embedId=twitter-widget-0&amp;frame=false&amp;hideCard=false&amp;hideThread=false&amp;id=1341429414643474433&amp;lang=en&amp;origin=http%3A%2F%2F127.0.0.1%3A8000%2Fsummernote%2Feditor%2Fid_content%2F&amp;theme=dark&amp;widgetsVersion=ed20a2b%3A1601588405575&amp;width=550px"" data-tweet-id=""1341429414643474433""></iframe></div> <script async="""" src=""https://platform.twitter.com/widgets.js"" charset=""utf-8""></script>
+
+<p>さて、僕が高校生の時も「ブラック企業」「ブラック労働」なんて単語が紙面を賑わせていました。<b>漠然と永遠に子供でいたいな... </b>と思っていましたw</p><h2>この記事を読むメリット</h2><p>さて、これまで学校で勉強をしてきたと思いますが、今までなんとなく「こんなの、なんの役に立つんだよ...」って感じたことあるのではないでしょうか？</p><p>今は実感しないかもしれませんが、マジでやっておいた方がいいです。<b>勉強サボった人の人生のクライマックスは20歳前後</b>です。これはマジ。</p><p>人生論はさておき、実は高校数学(数学2)で習う「対数」を使うと 働かなくても生きていけるための金額が計算できるんです。数学って便利ですね〜🌟知識の無駄遣い感ハンパないですが、とにかく計算してみましょう。</p><p>この記事を読むことで、次のようなものを手に入れることができます。</p>
+<div class=""index"">
+<ol><li>対数の計算 特に指数との関連性について</li><li>「等比級数の和」の応用</li><li>金融の知識を持っていることで人生の選択肢が増える実感</li><li>FIREムーブメントという 最近流行り？の動きについて</li></ol>
+</div>
+<p>早速、計算してみましょう〜！！</p><h2>働かなくても生きていくために必要な金額の導出</h2>
+<div class=""insertPic"">
+<img src=""/media/django-summernote/2020-12-23/86054505-e5ff-491d-9df7-089930b23f19.jpg"">
+</div>
+<p>働かなくても生きていける状態を、「経済的自由」と呼ぶことにし、次のようなセットアップで問題を解きます。</p>
+<div class=""index"">
+<ul><li>毎年$I$円の収入 $E$円の出費 貯蓄率$S$</li><li>インデックスファンド(複数の優良株詰め合わせセットみたいなやつ)に投資。利回りは$r$%</li><li>毎年資産から$k$%切り崩す</li><li>$\tau$年後に経済的自由に到達する</li></ul>
+</div>
+<p>さて、「経済的自由」に到達することを数式で表すにはどうしたら良いでしょうか。すでに述べた通り「経済的自由」である とは、働かなくても生きていける状態です。</p><p>言い換えれば、働かなくても得られるお金(投資リターンの年利)$S$が 年間の支出$p$を上回っている状態です。すなわち</p>
+
+\begin{equation} S\geq p \end{equation}<p></p><p>となっていれば良いです。よって、$\geq$ではなく$=$になる瞬間は何年後なのかを示せば終了です。</p>
+<div class=""H3"">
+<h3><span>STEP1. 年間の切り崩し額=年間の支出</span></h3>
+</div>
+<p>保有資産$P$円を毎年$k$%切り崩して、その額が年間で使いたい額(支出額$E$)と同じになれば 問題なく働かずして生きていけますので</p><p>\begin{equation}&nbsp; \frac{k}{100}P=E \end{equation}</p><p>と表せます。一方で貯蓄率は$S$なので、使ってしまうお金の割合は$1-S$と書けるはずですから、収入の$I$を用いて</p><p>\begin{equation}&nbsp; E=I(1-S) \end{equation}</p><p>と表せます。以上より</p><p>\begin{equation}&nbsp; \frac{k}{100}P=I(1-S)&nbsp;\end{equation}</p><p>です。</p>
+<div class=""H3"">
+<h3><span>STEP2. 保有資産$P$の推移</span></h3>
+</div>
+<p>さて、これまで保有資産を$P$円として計算してきましたが、この$P$円は、長年の地道な投資によって膨らみ築き上げたものです。</p><p>貯めたお金は複利で膨れ上がり、<b>指数関数的スピードで</b>どんどんどんどん大きくなっていきます。かつてアインシュタインが「人類最大の発明」と呼んだと言われる複利効果で、どんどん資産が大きくなっていきます。</p><p>1年目。あなたは収入から支出を引いた残り$IS$円を、利回り$r$%のインデックスファンドに投資しました。その結果、何もしていないにもかかわらず、あなたのお金は1年後</p><p>\begin{equation}&nbsp; IS\Bigl(1+\frac{r}{100}\Bigr) \end{equation}</p><p>円に増加しました。</p><p>さて、今年もせっせと$IS$円を、利回り$r$%のインデックスファンドに投資しました。その結果、1年前に投資して増えた$IS\Bigl(1+\frac{r}{100}\Bigr)$円が、さらに$r$%増えて、今年投資した$IS$円もまた$r$%増えます。結局、開始から2年後には</p><p>\begin{equation}&nbsp; IS\Bigl(1+\frac{r}{100}\Bigr)^2+IS\Bigl(1+\frac{r}{100}\Bigr) \end{equation}</p><p>円になりました。</p><p>規則性は見えてきましたか？3年後には</p><p>\begin{equation}&nbsp; IS\Bigl(1+\frac{r}{100}\Bigr)^3+IS\Bigl(1+\frac{r}{100}\Bigr)^2+IS\Bigl(1+\frac{r}{100}\Bigr) \end{equation}</p><p>円です。$n$年後には</p><p>\begin{align*}&nbsp; &amp;IS\Bigl(1+\frac{r}{100}\Bigr)^n+IS\Bigl(1+\frac{r}{100}\Bigr)^{n-1}+\dots+IS\Bigl(1+\frac{r}{100}\Bigr) \\ &amp;=IS\sum^n_{i=1}\Bigl(1+\frac{r}{100}\Bigr)^i\end{align*}</p>
+<p>円になっています。</p><p>右辺の$\sum$の部分は、<b>初項$1$、 公比$1+\frac{r}{100}$の等比数列の和</b>ですから、</p><p>\begin{equation}&nbsp; IS\sum^n_{i=1}\Bigl(1+\frac{r}{100}\Bigr)^i=\frac{\Bigl(1+\frac{r}{100}\Bigr)^n}{\frac{r}{100}}\end{equation}</p><p>と書けます。これはSTEP1の「年間取崩額=年間の支出」の左辺に使えそうです。</p>
+<div class=""H3"">
+<h3><span>STEP3. $n$年後って、何年後やねん</span></h3>
+</div>
+<p>さて、以上よりSTEP1の「年間取崩額=年間の支出」は</p><p>\begin{equation}&nbsp; \frac{k}{100}IS\frac{\Bigl(1+\frac{r}{100}\Bigr)^n}{\frac{r}{100}}=I(1-S)\end{equation}</p><p>とわかりました。しつこいようですが、上の式は「$n$年後に、年間取崩額=年間の支出になる」と言っていますが、その$n$年後とやらは一体いつなのでしょうか。</p><p>これは単に、上の式を$n=$の形に直して終了ですね。</p><p>\[\frac{k}{100}IS\frac{\Bigl(1+\frac{r}{100}\Bigr)^n}{\frac{r}{100}}=I(1-S)\]</p><p>\[\Bigl(1+\frac{r}{100}\Bigr)^n=\frac{100R(1-S)}{Sk}+1\]</p><p>\[ n\ln(1+\frac{r}{100})=\ln\Bigl( \frac{100R(1-S)}{Sk}+1\Bigr) \]</p><p>と式変形でき、最終的に</p><p>\begin{equation}&nbsp; n=\frac{\ln\Bigl( \frac{100R(1-S)}{Sk}+1\Bigr)}{\ln(1+\frac{r}{100})}\end{equation}</p><p>となります。途中で、書くのが面倒なので$\frac{r}{100}=R$としました。</p>
+
+
+<h2>(高校レベルの数学的)考察</h2>
+<p>貯蓄率$S$で、配当利回りが年間$r$%で、資産からの取崩が年間で$k$%のとき</p><p>\[ n=\frac{\ln\Bigl( \frac{100R(1-S)}{Sk}+1\Bigr)}{\ln(1+R)} \]</p><p>年後に経済的自立を手に入れることができるぞ...！！！</p><p>って言われて、何もかもを理解したあなたは天才です。少々文字が多すぎて式だけ見ても何が何だかよくわからん って方は多いと思います。</p><p>そこで、式を少し具体化しつつグラフ化して納得していただけたらなと思います。</p>
+<div class=""H3"">
+<h3><span>切り崩し額の割合</span></h3>
+</div>
+<p>まずは年間の取崩額ですが、<b>元本の4%以下</b>にすべきです。</p><p>これには明確な根拠があって、<b>切り崩した額が4%の場合 元の資金が死ぬまで無くならない確率が85%を超える</b>ことを示した研究があります。(トリニティスタディ)</p>
+<p>この研究自体は1985年に行われたものでかなり古く感じますが、その後も追試が行われ続け 最新のものでは2019年に同様の研究が行われています。</p>",,,,,,,,,

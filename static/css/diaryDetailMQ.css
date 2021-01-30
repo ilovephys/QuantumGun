@@ -1,0 +1,24 @@
+
+/*ここに書くのは「diaryDetail.html」におけるMediaQueryの操作。*/
+
+@media screen and (min-width:1200px) {
+
+}
+@media screen and (max-width:1200px) and (min-width:800px){
+
+}
+@media screen and (max-width:800px){
+    .genre span{
+        padding: 3px 6px;
+        border-radius: 4px;
+    }
+    .detail h2{
+        font-size:20px;
+    }
+    .index{
+        width:90%;
+    }
+    .insertPic{
+        width:90%;
+    }
+}

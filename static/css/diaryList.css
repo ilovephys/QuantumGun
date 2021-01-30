@@ -1,0 +1,134 @@
+/* BlogList */
+
+/* ぱんくずナビ */
+.pankuzu{
+    width:90%;
+    margin:0 auto;
+    padding:10px 10px;
+}
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+  font-weight: bold;/*太字*/
+}
+
+.breadcrumb li:after {
+  /* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+  color: #555;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.breadcrumb li:first-child a:before {
+  /*家アイコン*/
+  font-family: "Font Awesome 5 Free";
+  content: '\f015';
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #2e7fea;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.cardPC {
+    width: 95%;
+    height: 250px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #ccc;
+    position:relative;
+}
+.boxPC {
+    float:left;
+    height:100%;
+}
+.imagePC {
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+    margin:10px;
+}
+.sentencePC{
+    height:100%;
+}
+.titleSec{
+    height:30%;
+    overflow:hidden;
+}
+.titlePC {
+    font-size: 20px;
+    font-weight:bold;
+    margin: 10px;
+    padding-bottom:10px;
+}
+.titlePC a{
+    text-decoration: none;
+    color:#494949;
+}
+.categorySec{
+    height:10%;
+}
+.categoryPC{
+    margin-left:10px;
+    color:white;
+    font-weight:bold;
+    padding: 5px 8px;
+    border-radius: 5px;
+    background-color:blue;
+}
+.descriptionSec{
+    height:50%;
+    overflow:hidden;
+}
+.descriptionSec p{
+    padding: 10px;
+    color: #666;
+    width:90%;
+    margin:0 auto;
+}
+.updateSec{
+    height:10%;
+}
+.updateSec span{
+    font-size: 80%;
+    color: #444;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+
+/* diaryDetailと共通 */
+.reversePage{
+    background-color:#305097;
+    border-radius:5px;
+    width:30%;
+    margin:20px auto;
+}
+.reversePage a{
+    text-decoration: none;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
+.reversePage p{
+    padding:10px 0;
+}

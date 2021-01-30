@@ -1,0 +1,45 @@
+/* for iPhone */
+@media screen and (max-width:500px) {
+    /*　画面サイズが480pxからはここを読み込む　*/
+    .card{
+        width:90%;
+    }
+    h2{
+        margin-top:30px;
+    }
+
+}
+
+/* for iPad */
+@media screen and (min-width:500px) and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    .card{
+        width:45%;
+    }
+    h2{
+        margin-top:60px;
+    }
+}
+
+/* iPad iPhone共通 */
+@media screen and ( max-width:1024px) {
+    /*　画面サイズが768pxから1024pxまではここを読み込む　*/
+    #contents{
+        width:90%;
+    }
+    .contentsCategory{
+        width:90%;
+    }
+}
+
+/* 画面めっちゃでかい時 */
+@media screen and ( min-width:1025px) {
+    /*　1024px以上ではここを読み込む　*/
+    #contents{
+        width:900px;
+    }
+    .contentsCategory{
+        width:900px;
+    }
+}
+

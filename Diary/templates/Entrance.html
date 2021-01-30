@@ -1,0 +1,223 @@
+{% load static %}
+
+<html lang="ja">
+  <header>
+      <title>Quantum Gun</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="author" content="Murasaki a.k.a. PurPle">
+      <meta name="description" content="叢咲(むらさき)の公式webサイトです。">
+
+      <link href="{% static 'css/Entrance.css' %}" type="text/css" rel="stylesheet">
+      <link href="{% static 'css/EntranceMediaQuery.css' %}" type="text/css" rel="stylesheet">
+
+  </header>
+
+  <body>
+    <div id = "all">
+        <div id="title">
+            <img src="{% static 'img/koke.jpg' %}" class="titleImage">
+            <h1>Quantum Gun</h1>
+        </div>
+
+        <div class="copyRight">
+            <p>written by Murasaki a.k.a. Purple</p>
+        </div>
+
+        <h2><span>Contents</span></h2>
+
+        <div id="contents">
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/japanGarden.jpg' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                    <a href = "{% url 'about' %}">
+                        About Me
+                    </a>
+                    </h3>
+                    <p>当webサイト管理人の叢咲(むらさき)についてです。叢咲の経歴やスキルなどをまとめました。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/GionFes.jpeg' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "{% url 'aboutQG' %}">
+                            About QuantumGun
+                        </a>
+                    </h3>
+                    <p>当webページ「QuantumGun(量子砲)」についてです。実現したいビジョンやデザインコンセプトなど。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/wave2.jpg' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "{% url 'blog' %}">
+                            Blog
+                        </a>
+                    </h3>
+                    <p>メインコンテンツのブログ</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/KyotoYasaka2.jpg' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "">
+                            Contact
+                        </a>
+                    </h3>
+                    <p>Quantum Gunの管理人 叢咲とのコンタクトはこちらからお願いいたします。</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!---こっから先はcontentsCategoryについて-->
+
+
+        <div id="contentsList">
+            <h2>Contents Category</h2>
+            <img src="{% static 'img/fujiDawn.jpg' %}" class="titleImage">
+            <div class="copyRight">
+                <p>ブログで書いた記事をジャンル別に分類しました。どうぞ、心ゆくまでお楽しみください。</p>
+            </div>
+        </div>
+
+        <div class="contentsCategory">
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/python.png' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                    <a href = "{% url 'blogGenre' 'Python' %}">
+                        Python道場
+                    </a>
+                    </h3>
+                    <p>世界的にも人気の高いプログラミング言語 Pythonについての記事です。基本的なことを中心に書いています。初心者&未経験者向けです。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/django2.png' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "{% url 'blogGenre' 'Django' %}">
+                            Django入門
+                        </a>
+                    </h3>
+                    <p>Instagram YouTubeに使われている(と言われている)webフレームワークのDjangoについて学びます。当webページもDjangoで作成しました。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/dataScience2.jpg' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "{% url 'blogGenre' 'DataScience' %}">
+                            データサイエンス
+                        </a>
+                    </h3>
+                    <p>データを駆使してPythonで殴ります。極力数学は使いませんが、数学的な補足が欲しい方にはリンクを付けています。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/bitcoin2.jpg' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "{% url 'blogGenre' 'FIRE' %}">
+                            FIRE GAME
+                        </a>
+                    </h3>
+                    <p>管理人の叢咲(むらさき)が、経済的自由を手にして資本主義に勝利するまで(できなかったらすまん)の雑記です。経済的自立のためにとった戦略や終始の結果などを事明細に記録します。</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="contentsCategory">
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/study2.jpg' %}" class="imagePC">
+
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                    <a href = "{% url 'blogGenre' 'Education' %}">
+                        受験ラボ
+                    </a>
+                    </h3>
+                    <p>中学入試 高校入試 大学入試等について 元予備校講師の私が語り尽くします。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/python.png' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "{% url 'blogGenre' 'PythonHuck' %}">
+                            pythonハック
+                        </a>
+                    </h3>
+                    <p>pythonを使ってあらゆるものを自動化します。単発の記事なので、pythonの基本を押さえていれば読めるようにします。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/math2.jpg' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "{% url 'blogGenre' 'MathPhys' %}">
+                            数学 & 物理の部屋
+                        </a>
+                    </h3>
+                    <p>物理と数学を久しぶりにやりたいので。</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="cardImage">
+                    <img src="{% static 'img/writing2.jpg' %}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>
+                        <a href = "{% url 'blogGenre' 'Other' %}">
+                            その他
+                        </a>
+                    </h3>
+                    <p>主に雑記など。</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; Murasaki a.k.a PurPle</p>
+        </footer>
+    </div>
+  </body>
+</html>

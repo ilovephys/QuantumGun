@@ -1,0 +1,26 @@
+
+/*ここに書くのは「diaryList.html」におけるMediaQueryの操作。*/
+/*ベースは「diaryBaseMQ.css」 ブログは「diaryDetailMQ.css」*/
+
+@media screen and (max-width:600px){
+    .cardPC{
+        height: 280px;
+    }
+    .titleSec{
+        height: 45px;
+    }
+    .boxPC {
+        float:none;
+        width:80%;
+        margin:0 auto;
+        height:170px;
+    }
+    .imagePC{
+        width:100%;
+        height:150px;
+        margin: 10px auto;
+    }
+    .descriptionSec{
+        display:none;
+    }
+}

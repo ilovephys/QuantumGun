@@ -1,0 +1,94 @@
+{% extends "diaryBase.html" %}
+{% load static %}
+
+<!-- head -->
+{% block description %}
+    叢咲の作成した記事の一覧です。プログラミングから経済から物理からデータサイエンスからFIREまで 叢咲の知識全てをアウトプットしていきます。
+{% endblock %}
+
+{% block title %}
+    Blog List
+{% endblock %}
+
+{% block customCSS %}
+    <link href="{% static 'css/diaryList.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'css/diaryListMQ.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+<!-- body -->
+{% block contentsTitle %}
+    BlogList
+{% endblock %}
+
+{% block headerPic %}
+    {% static 'img/wave.jpg' %}
+{% endblock %}
+
+
+{% block titleContsnts %}
+    <div class="pankuzu">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <i class="fas fa-home"></i>
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{% url 'Entrance' %}">
+                    <span itemprop="name">Home</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{% url 'blog' %}">
+                    <span itemprop="name">List</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+    </div>
+    <div class="title">
+        <h1>Blog List</h1>
+    </div>
+{% endblock %}
+
+{% block eyeCatchPic %}
+    <img class="eyeCatchPic" src="{% static 'img/Kingyo.jpg' %}">
+{% endblock %}
+
+{% block contentsIndex %}
+
+{% endblock %}
+
+{% block contentsSection %}
+    {% for item in objectList %}
+        <div class="cardPC">
+            <div class="boxPC">
+                <img src="{{ item.eyeCatch.url }}" class="imagePC">
+            </div>
+            <div class="sentencePC">
+                <div class="titleSec">
+                    <p class="titlePC">
+                        <a href = "{% url 'detail' item.pk %}" style="text-decoration: none;">
+                            {{  item.title  }}
+                        </a>
+                    </p>
+                </div>
+                <div class="categorySec">
+                    <a href="{% url 'blogGenre' item.category %}">
+                        <span class="categoryPC">{{ item.category }}</span>
+                    </a>
+                </div>
+                <div class="descriptionSec">
+                    {{ item.contentDescription　| safe }}
+                </div>
+                <div class="updateSec">
+                    <span>更新日 {{ item.updateDate }}</span>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
+
+{% block reverse %}
+    {% url 'Entrance' %}
+{% endblock %}

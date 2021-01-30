@@ -1,0 +1,53 @@
+
+/*ここに書くのは「diaryBase.html」におけるMediaQueryの操作。*/
+/*リストは「diaryListMQ.css」 ブログは「diaryDetailMQ.css」*/
+
+@media screen and (min-width:1200px) {
+    /*　画面サイズが1200px以上はここを読み込む　*/
+    #Contents{
+        width: 1000px;
+    }
+}
+@media screen and (max-width:1200px) and (min-width:800px){
+
+}
+@media screen and (min-width:801px){
+    .hamburger-menu{
+        display: none;
+    }
+}
+@media screen and (max-width:800px){
+    .headerMenu{
+        display:none;
+    }
+    #mainContents{
+        width:100%;
+        margin: 10px auto;
+        float:none;
+    }
+    #mainContents h1{
+        font-size:25px;
+    }
+    #subContents{
+        width:100%;
+        margin: 10px auto;
+        float:none;
+    }
+    .section{
+        padding-bottom:10px;
+    }
+    .subFlame{
+        margin-bottom:30px;
+    }
+    .introPic{
+        width:100%;
+        height:200px;
+        margin:5px auto 10px auto;
+        text-align:center;
+    }
+    .intro img{
+        width:200px;
+        height:100%;
+    }
+}
+

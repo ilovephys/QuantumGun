@@ -1,0 +1,408 @@
+/* BlogDetail or About */
+
+/*ぱんくずナビ*/
+.pankuzu{
+    width:90%;
+    margin:0 auto;
+    padding:10px 10px;
+}
+.breadcrumb {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumb li {
+  display: inline;/*横に並ぶように*/
+  list-style: none;
+  font-weight: bold;/*太字*/
+}
+
+.breadcrumb li:after {
+  /* >を表示*/
+  content: '>';
+  padding: 0 0.2em;
+  color: #555;
+}
+
+.breadcrumb li:last-child:after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: gray;
+}
+
+.breadcrumb li:first-child a:before {
+  /*家アイコン*/
+  font-family: "Font Awesome 5 Free";
+  content: '\f015';
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #2e7fea;
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+.genre{
+    margin:10px 0 0 40px;
+}
+.genre span{
+    color:white;
+    font-weight:bold;
+    background-color: blue;
+    padding: 5px 8px;
+    border-radius: 5px;
+}
+/* {% block contentsSection %}の中身を<div class="detail">で囲って使ってください */
+.detail h2{
+    margin:20px 0 20px 20px;
+    padding: 0.25em 0.5em;/*上下 左右の余白*/
+    color: #494949;/*文字色*/
+    background: transparent;/*背景透明に*/
+    border-left: solid 5px #444444;/*左線*/
+}
+/* h3タグは、h3タグを<div class="H3">で囲み、<h3>の中身を<span>で挟んで使ってください*/
+.detail h3{
+    margin: 10px 0 10px 30px;
+    color: #494949;/*文字色*/
+}
+.H3 span{
+    border-bottom: solid 3px #494949;
+}
+.detail h4{
+    margin: 10px 0 10px 30px;
+    color: #494949;/*文字色*/
+}
+.detail p{
+    margin:20px 20px 0 40px;
+    line-height:1.7;
+    color:#333;
+}
+/* リスト(箇条書き 数字込みで)を使う場合、<div class="index">で囲んでください */
+.index{
+    margin:20px auto;
+    width:80%;
+}
+.index ul, ol {
+    color: #494949;
+    border: dotted #494949 1px;/*ドット 色 太さ*/
+    padding: 0.5em 0.5em 0.5em 2em;
+}
+.index ul li, ol li {
+  line-height: 1.5;
+  padding: 0.5em 0;
+}
+
+/* 会話文です */
+/*アイコン左にある吹き出し*/
+.balloon-set-box {
+  display: flex;
+  flex-wrap: wrap;
+  width:90%;
+  margin:0 auto;
+}
+.balloon-set-box.left { /* 左 */
+  flex-direction: row;
+}
+.balloon-set-box.right { /* 右 */
+  flex-direction: row-reverse; /* アイコンと吹き出しの並びを入れ替える */
+}
+.balloon {
+  position: relative; /* 三角の位置を固定するために設定 */
+  display: inline-block;
+  max-width: 300px;
+  margin: 10px 20px 20px; /* 上 左右 下のマージン */
+  padding: 8px 15px; /* ふきだし内の余白 */
+  background: #F4F5F7; /* 背景色 */
+  text-align: left; /* テキストの揃え */
+  border-radius: 15px;
+}
+.balloon::after {
+  content: '';
+  border: 14px solid transparent;
+  border-top-color: #F4F5F7;
+  position: absolute;
+  top: 0;
+}
+.left .balloon::after { /* 左側からの三角の位置 */
+  left: -10px;
+}
+.right .balloon::after { /* 右側からの三角の位置 */
+  right: -10px;
+}
+.icon-box {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #F4F5F7;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+  overflow: hidden;
+}
+.icon-box img{
+    width:100%;
+    height:100%;
+}
+
+/* 画像を挿入する場合は<div class="insertPic">で囲ってください*/
+/* summernoteでは、デフォルトでimgタグにstyle="width: "が入ってしまうので、適当に消しましょう。 */
+.insertPic{
+    width:80%;
+    margin:10px auto;
+}
+.insertPic img{
+    width:100%;
+}
+/* 引用を行う場合、<blockquote>の内部にpタグを2つ付けてください。 */
+blockquote {
+    position: relative;
+    margin: 20px auto;
+    width: 80%;
+    padding: 35px 15px 10px 15px;
+    box-sizing: border-box;
+    font-style: italic;
+    background: #f5f5f5;
+    color: #777777;
+    border-left: 4px solid #7db4e6;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.14);
+}
+blockquote:before{
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    color: #7db4e6;
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 900;
+}
+blockquote p {
+    padding: 0;
+    margin: 7px 0;
+    line-height: 1.7;
+}
+blockquote cite {
+    display: block;
+    text-align: right;
+    color: #888888;
+    font-size: 0.9em;
+}
+/* 記事内で、カード付きのリンクを作成する場合 */
+.linkCard{
+    width: 80%;
+    height: 200px;
+    margin: 30px auto;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 3px 6px #ccc;
+    position:relative;
+}
+.linkCardPic{
+    float:left;
+    height:100%;
+}
+.linkImage{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px 0 0 5px;
+    margin:10px;
+}
+.linkSentence{
+    height:100%;
+}
+.linkTitleSec{
+    height:35%;
+    overflow:hidden;
+}
+.linkTitleSec p {
+    font-size: 18px;
+    font-weight:bold;
+    margin: 10px;
+    padding-bottom:10px;
+    color: #444;
+}
+.linkTitleSec a{
+  transition: color 0.5s;
+  text-decoration: none;
+}
+.linkTitleSec a:hover{
+  color : #ff7043;
+}
+.linkDescriptionSec{
+    height:55%;
+    overflow:hidden;
+}
+.linkDescriptionSec p{
+    padding: 10px;
+    color: #666;
+    width:90%;
+    margin:0 auto;
+}
+/*Twitterのツイートを埋め込む際*/
+/*あと、埋め込むhtmlで theme="dark"に変更*/
+.twitter-tweet{
+    margin:0 auto;
+}
+/*文書中にpythonとかのコードをブチ込む(ただし、<pre>タグの中身に<code>タグを入れてください。)*/
+pre{
+    width:80%;
+    margin:10px auto;
+}
+/* TeXで式番付き数式入れる時。勝手にclass="MathJax_Display"の中に数式が入る */
+
+/* diaryDetailと共通 */
+.reversePage{
+    background-color:#305097;
+    border-radius:5px;
+    width:30%;
+    margin:20px auto;
+}
+.reversePage a{
+    text-decoration: none;
+    text-align:center;
+    color:white;
+    font-weight:bold;
+}
+.reversePage p{
+    padding:10px 0;
+}
+
+.subIsland h2 {
+    background-color:black;
+    opacity: 0.8;
+    padding: 0.5em;/*文字まわり（上下左右）の余白*/
+    color:white;
+}
+.subIslandImg{
+    height:200px;
+    text-align:center;
+}
+.subIslandImg img{
+    width:180px;
+    height:180px;
+    margin:10px 10px;
+}
+.subIslandSentence {
+    width:90%;
+    margin:0 auto;
+}
+.subIsland p{
+    margin:10px 0;
+    color: #494949;
+}
+.subIslandSentence span{
+    color:white;
+    font-weight:bold;
+    margin:5px 20px 5px 0;
+    padding:5px 20px;
+    background-color:#305097;
+    border-radius:5px;
+}
+.subIsland span{
+    color:white;
+    font-weight:bold;
+    margin:100px 10px;
+    padding:5px 20px;
+    background-color:#305097;
+    border-radius:5px;
+}
+.RelationArticle{
+    width:95%;
+    margin:10px auto;
+    padding: 2.5% 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.RelationArticle > *{
+  min-width: 8%;
+  background: #fff;
+  font-size: 64px;
+  text-align: center;
+}
+.card{
+    width:48%;
+    box-shadow: 0 3px 6px #ccc;
+    border-radius:5px;
+    float:left;
+    margin-bottom: 20px;
+}
+.cardImage{
+    width:100%;
+}
+.cardImage img{
+    width:100%;
+}
+.card h3{
+    text-align:center;
+    padding:10px 0;
+}
+.card a{
+    color:#4d5156;
+    text-decoration: none;
+    font-size:18px;
+    font-weight:bold;
+}
+.card p{
+    font-size:15px;
+    padding: 10px 0;
+}
+.cardSentence{
+    width:90%;
+    margin: 0 auto;
+    color:#4d5156;
+}
+.RelationArticle{
+    overflow:hidden;
+}
+/* JavaScriptで自動生成した目次 */
+#toc{
+    width:80%;
+    margin:10px auto;
+    background-color:#F4F5F7;
+    padding:0 0 10px 0;
+}
+#toc ul{
+    list-style: none;
+    margin: 10px 0;
+}
+li.h2li{
+    list-style: none;
+    padding-left:20px;
+}
+li.h3li{
+    padding-left:30px;
+}
+#toc a{
+    text-decoration: none;
+    color: #494949
+}
+#toc h2{
+    background-color:black;
+    opacity: 0.8;
+    color:white;
+    margin:0;
+}
+
+/*  広告部分 */
+.advertising{
+    width:80%;
+    margin:0 auto;
+}
+.advertising h3{
+    padding:5px 0;
+}
+.advertising span{
+    padding:5px 10px;
+    background-color:#305097;
+    font:bold;
+    color:white;
+    margin:0 0;
+}

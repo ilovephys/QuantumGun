@@ -1,0 +1,349 @@
+{% extends "diaryBase.html" %}
+{% load static %}
+
+
+<!-- head -->
+<!--Twitter 拡散関連-->
+{% block TwitterURL %}
+{% endblock %}
+{% block TwitterContentsTitle %}
+    {{ object1.title }}
+{% endblock %}
+{% block TwitterDescription %}
+    {{ object1.contentDescription }}
+{% endblock %}
+{% block TwitterImage %}
+    {{ object1.eyeCatch.url }}
+{% endblock %}
+
+<!-- Google検索でヒットした時に出る文書-->
+{% block description %}
+    {{ object1.contentDescription }}
+{% endblock %}
+
+{% block customCSS %}
+    <link href="{% static 'css/diaryDetail.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'css/diaryDetailMQ.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+<!--body-->
+{% block title %}
+    {{ object1.title }}
+{% endblock %}
+
+{% block headerPic %}
+    {% static 'img/wave.jpg' %}
+{% endblock %}
+
+{% block titleContsnts %}
+    <div class="pankuzu">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <i class="fas fa-home"></i>
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{% url 'Entrance' %}">
+                    <span itemprop="name">Home</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{% url 'blogGenre' object1.category %}">
+                    <span itemprop="name">{{ object1.category }}</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{{ object1.url }}">
+                    <span itemprop="name">{{ object1.title }}</span>
+                </a>
+                <meta itemprop="position" content="3" />
+            </li>
+        </ol>
+    </div>
+    <div class="title">
+        <h1>{{ object1.title }}</h1>
+        <div class="genre">
+            <a href="{% url 'blogGenre' object1.category %}">
+                <span>{{ object1.category }}</span>
+            </a>
+        </div>
+        <div class="info">
+            <div class="date">
+                <span>作成日 : {{ object1.postdate }}  </span><br>
+                <span>更新日 : {{ object1.updateDate }}  </span><br>
+            </div>
+            <div class="pV">
+                {{ object1.pageView }}pV
+            </div>
+        </div>
+        <div class="diffusion">
+            <div class="Tw">
+                <a href="https://twitter.com/intent/tweet?text={{ object1.title }} a">
+                    <div class="TwDiff">
+                        <i class="fab fa-twitter fa-2x whiteLogo"></i>
+                    </div>
+                </a>
+                <!-- https://qiita.com/bm0521/items/39ae81e2ba01c9d3e0bd --->
+            </div>
+            <div class="Fcb">
+                <div class="FcbDiff">
+                    <i class="fab fa-facebook-f fa-2x whiteLogo"></i>
+                </div>
+            </div>
+            <div class="LINE">
+                <div class="LINEDiff">
+                    <img src="{% static 'img/LINE.png' %}">
+                </div>
+            </div>
+            <div class="HTN">
+                <div class="HTNDiff">
+                    <img src="{% static 'img/HATEBU.png' %}">
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block eyeCatchPic %}
+    <img src="{{ object1.eyeCatch.url }}">
+{% endblock %}
+
+{% block contentsSection %}
+    <!--blogListとblogDetail,about, contactはcontentsSectionの中身が違ってくるので区別します-->
+    <div class="detail">
+        {{ object1.introduction | safe }}
+        <div id="toc"></div>
+        {{ object1.content | safe }}
+        {% if object1.link is not Null %}
+            <a href="{% url 'detail' object1.link %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink0.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink0.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink0.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {{ object1.content2 | safe }}
+        {% if object1.link2 is not Null %}
+            <a href="{% url 'detail' object1.link2 %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink1.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink1.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink1.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {{ object1.content3 | safe }}
+        {% if object1.link3 is not Null %}
+            <a href="{% url 'detail' object1.link3 %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink2.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink2.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink2.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {{ object1.content4 | safe }}
+        {% if object1.link4 is not Null %}
+            <a href="{% url 'detail' object1.link4 %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink3.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink3.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink3.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+        {{ object1.content5 | safe }}
+        {% if object1.link5 is not Null %}
+            <a href="{% url 'detail' object1.link5 %}" style="text-decoration: none;">
+                <div class="linkCard">
+                    <div class="linkCardPic">
+                        <img src="{{ objectLink4.eyeCatch.url }}" class="linkImage">
+                    </div>
+                    <div class="linkSentence">
+                        <div class="linkTitleSec">
+                            <p>{{ objectLink4.title }}</p>
+                        </div>
+                        <div class="linkDescriptionSec">
+                            {{ objectLink4.contentDescription | safe}}
+                        </div>
+                    </div>
+                </div>
+            </a>
+        {% endif %}
+    </div>
+{% endblock %}
+
+{% block reverse %}
+    {% url 'blog' %}
+{% endblock %}
+
+{% block WhoWriteThisArticle %}
+<h2>この記事を書いた人</h2>
+<div class="WhoWriteThisArticle">
+    <div class="subIslandImg">
+        <img src="{% static 'img/purple.jpeg' %}">
+    </div>
+    <div class="mySNS">
+        <div class="SNSLOGO">
+            <a href="https://twitter.com/TestTweetBot3" style="text-decoration: none; color:black;">
+                <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+        </div>
+
+        <div class="SNSLOGO">
+            <i class="fab fa-instagram fa-2x"></i>
+        </div>
+
+        <div class="SNSLOGO">
+            <i class="fab fa-facebook-square fa-2x"></i>
+        </div>
+    </div>
+    <div class="subIslandSentence">
+        <p><span>名前</span>叢咲(むらさき)</p>
+        <p><span>趣味</span>サウナ 温泉 ビール</p>
+        <p><span>座右の銘</span>「同じアホなら、踊らにゃ損ソン」</p>
+        <p><span>興味</span>機械学習 物理(天体物理学)</p>
+        <p>初めまして、叢咲(むらさき)と言います😄 未経験から新卒でIT企業に内定キメ、今でも継続的に勉強している社会人です。</p>
+    </div>
+</div>
+{% endblock %}
+
+{% block RelationalArticle %}
+<h2>関連記事</h2>
+<p><span>{{ object1.category }}</span>関連の記事を読んだ人におすすめの記事</p>
+<div class="RelationArticle">
+    {% for relation in objectRelationArticle %}
+    <div class="card">
+        <a href="{% url 'detail' relation.id %}">
+            <div class="cardImage">
+                <img src="{{ relation.eyeCatch.url }}" class="imagePC">
+            </div>
+            <div class="cardSentence">
+                <h3>{{ relation.title }}</h3>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+<p><span>人気の記事</span>QuantumGunで 特に読まれている記事</p>
+<div class="RelationArticle">
+    {% for relation2 in objectFamousArticle %}
+        <div class="card">
+            <a href="{% url 'detail' relation2.id %}">
+                <div class="cardImage">
+                    <img src="/media/{{ relation2.eyeCatch }}" class="imagePC">
+                </div>
+                <div class="cardSentence">
+                    <h3>{{ relation2.title }}</h3>
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
+{% block subFlameIndex %}
+    <!-- あとで書く 多分JavaScript勉強してからかな-->
+{% endblock %}
+
+{% block Advertising %}
+    <h2>告知</h2>
+    <div class="advertising">
+        {{ object1.advertising.advertising | safe }}
+    </div>
+{% endblock %}
+
+{% block JavaScript %}
+<script type="text/javascript">
+document.addEventListener('DOMContentLoaded', function () {
+    var contentsList = document.getElementById('toc'); // 目次を追加する先(table of contents)
+    var div = document.createElement('div'); // 作成する目次のコンテナ要素
+
+    var h2 = document.createElement("h2");
+    h2.innerHTML = "Index";
+    contentsList.appendChild(h2);
+
+    // .entry-content配下のh2、h3要素を全て取得する
+    var matches = document.querySelectorAll('.detail h2, .detail h3');
+    // 取得した見出しタグ要素の数だけ以下の操作を繰り返す
+    matches.forEach(function (value, i) {
+        // 見出しタグ要素のidを取得し空の場合は内容をidにする
+        var id = value.id;
+        if(id === '') {
+            id = value.textContent;
+            value.id = id;
+        }
+        // 要素がh2タグの場合
+        if(value.tagName === 'H2') {
+            var ul = document.createElement('ul');
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            // 追加する<ul><li><a>タイトル</a></li></ul>を準備する
+            a.innerHTML = value.textContent;
+            a.href = '#' + value.id;
+            li.appendChild(a);
+            li.className="h2li";
+            ul.appendChild(li);
+            ul.className="h2ul";
+            // コンテナ要素である<div>の中に要素を追加する
+            div.appendChild(ul);
+        }
+        // 要素がh3タグの場合
+        if(value.tagName === 'H3') {
+            var ul = document.createElement('ul');
+            var li = document.createElement('li');
+            var a = document.createElement('a');
+            // コンテナ要素である<div>の中から最後の<li>を取得する。
+            var lastUl = div.lastElementChild;
+            var lastLi = lastUl.lastElementChild;
+            // 追加する<ul><li><a>タイトル</a></li></ul>を準備する
+            a.innerHTML = value.textContent;
+            a.href = '#' + value.id;
+            li.appendChild(a);
+            li.className="h3li";
+            ul.appendChild(li);
+            ul.className="h3ul";
+            // 最後の<li>の中に要素を追加する
+            lastLi.appendChild(ul);
+        }
+    });
+// 最後に画面にレンダリング
+contentsList.appendChild(div);
+});
+</script>
+{% endblock %}

@@ -1,0 +1,217 @@
+{% load static %}
+
+<html lang="ja">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Murasaki a.k.a. PurPle">
+        <meta name="description" content="{% block description %}{% endblock %}">
+
+        <!-- Twitterで拡散する際 -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@TestTweetBot3">
+        <meta property="og:url" content="{% block TwitterURL %}{% endblock %}"> <!--③-->
+        <meta property="og:title" content="{% block TwitterContentsTitle %}{% endblock %}"> <!--④-->
+        <meta property="og:description" content="{% block TwitterDescription %}{% endblock %}"> <!--⑤-->
+        <meta property="og:image" content="{% block TwitterImage %}{% endblock %}"> <!--⑥-->
+
+        <title>{% block title %}{% endblock %}</title>
+
+        <!-- Custom styles for this template -->
+        <link href="{% static 'css/diaryBase.css' %}" type="text/css" rel="stylesheet">
+        <link href="{% static 'css/dairyBaseMediaQuery.css' %}" type="text/css" rel="stylesheet">
+        {% block customCSS %}
+
+        {% endblock %}
+        <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+        <link href="{% static 'css/atelier-seaside-dark.css' %}" rel="stylesheet" >
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+        <script src="{% static 'js/highlight.pack.js' %}"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+        </script>
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                TeX: { equationNumbers: { autoNumber: "AMS" }},
+                tex2jax: {
+                    inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    processEscapes: true
+                },
+                "HTML-CSS": { matchFontHeight: false },
+                displayAlign: "left",
+                displayIndent: "2em"
+            });
+        </script>
+    </head>
+    <body>
+    <div id="container">
+        <header>
+            <div class="headerMenu">
+                <a href="#">
+                    <div class="headerCategory">
+                        <p>Contact</p>
+                    </div>
+                </a>
+                <a href="{% url 'blog' %}">
+                    <div class="headerCategory">
+                        <p>Blog</p>
+                    </div>
+                </a>
+                <a href="{% url 'about' %}">
+                    <div class="headerCategory">
+                        <p>About</p>
+                    </div>
+                </a>
+            </div>
+
+            <div class="hamburger-menu">
+                <div class="hamburger-menu-line line-top"></div>
+                <div class="hamburger-menu-line line-middle"></div>
+                <div class="hamburger-menu-line line-bottom"></div>
+            </div>
+
+        </header>
+        <div id="main">
+            <div id="link">
+                <img class="intro" src="{% block headerPic %}{% endblock %}">
+
+            </div>
+            <div id="Contents">
+                <div id="mainContents">
+                    <div class="mainIsland">
+                        {% block titleContsnts %}{% endblock %}
+                        <div class="section">
+                            <div class="eyeCatch">
+                                {% block eyeCatchPic %}{% endblock %}
+                            </div>
+                            {% block contentsSection %}{% endblock %}
+                            <div class="reversePage">
+                                <a href="{% block reverse %}{% endblock %}">
+                                    <p>Back</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainIsland">
+                        <div class="subIsland">
+                            {% block WhoWriteThisArticle %}{% endblock %}
+                        </div>
+                    </div>
+                    <div class="mainIsland">
+                        <div class="subIsland">
+                            {% block RelationalArticle %}{% endblock %}
+                        </div>
+                    </div>
+                    <div class="mainIsland">
+                        <div class="subIsland">
+                            {% block Advertising %}{% endblock %}
+                        </div>
+                    </div>
+                </div>
+
+                <div id="subContents">
+                    <div class="subFlame">
+                        <h2>Introduction</h2>
+                        <div class="intro">
+                            <div class="introPic">
+                                <img class="intro" src="{% static 'img/purple.jpeg' %}">
+                            </div>
+                            <h3>叢咲(むらさき) a.k.a. PurPle</h3>
+                                <div class="mySNS">
+                                    <div class="SNSLOGO">
+                                        <a href="https://twitter.com/TestTweetBot3" style="text-decoration: none; color:black;">
+                                            <i class="fab fa-twitter-square fa-2x"></i>
+                                        </a>
+
+                                    </div>
+                                    <div class="SNSLOGO">
+                                        <i class="fab fa-instagram fa-2x"></i>
+                                    </div>
+                                    <div class="SNSLOGO">
+                                        <i class="fab fa-facebook-square fa-2x"></i>
+                                    </div>
+                                </div>
+                                <div class="introSent">
+                                    <p>データサイエンス勉強中の社会人</p>
+                                    <p>Data Sciecne / Machine Learning / python / Django / FIRE</p>
+                                </div>
+
+                        </div>
+                    </div>
+
+                    <div class="subFlame">
+                        <h2>Link</h2>
+                        <div class="article">
+                            <div class="famousArticle">
+                                <h3>人気の記事</h3>
+                                <!---{% block famousArticle %}{% endblock %}--->
+                                {% for item in objectFamousArticle %}
+                                    <a href="/blogDetail/{{item.id}}" style="text-decoration: none;">
+                                        <div class="famousListCard">
+                                            <div class="famousListImg">
+                                                <img src="/media/{{ item.eyeCatch }}" class="imageFamousList">
+                                            </div>
+                                            <div class="famousListSentence">
+                                                <div class="famousListTitle">
+                                                    <p class="titleFamousList" style="color:#444;">{{ item.title }}</p>
+                                                </div>
+                                                <div class="famousListPV">
+                                                    <p>{{ item.pageView }}pV</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                {% endfor %}
+                            </div>
+                            <div class="pastArticle">
+                                <h3>過去の記事</h3>
+                                {% for date in objectArXiv %}
+                                <div class="pastArticleListCard">
+                                    <p>{{ date.0 }}年{{ date.1 }}月 ({{date.2}})</p>
+                                </div>
+                                {% endfor %}
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subFlame">
+                        <h2>Twitter</h2>
+                        <div class="Twitter">
+                            <div class="timeline">
+                                <a class="twitter-timeline" data-tweet-limit="6" href="https://twitter.com/TestTweetBot3?ref_src=twsrc%5Etfw">
+                                    Tweets by TestTweetBot3
+                                </a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                            <div class="btn">
+                                <a href="https://twitter.com/TestTweetBot3?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">
+                                    Follow @TestTweetBot3
+                                </a>
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="subFlame inndexx">
+                        {% block subFlameIndex %}{% endblock %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footter>
+            <div class="footerBack">
+                <p>&copy; Murasaki a.k.a PurPle</p>
+            </div>
+        </footter>
+    </div>
+    <script src="{% static 'js/diaryBase.js' %}"></script>
+    <!--
+    <script src="{% static 'js/diaryDetail.js' %}"></script>
+    -->
+    {% block JavaScript %}
+
+    {% endblock %}
+  </body>
+</html>

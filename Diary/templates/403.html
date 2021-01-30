@@ -1,0 +1,81 @@
+{% extends "diaryBase.html" %}
+{% load static %}
+
+
+<!-- head -->
+<!--Twitter 拡散関連-->
+<!-- Google検索でヒットした時に出る文書-->
+{% block description %}
+    403 error
+{% endblock %}
+
+{% block customCSS %}
+    <link href="{% static 'css/diaryDetail.css' %}" type="text/css" rel="stylesheet">
+    <link href="{% static 'css/diaryDetailMQ.css' %}" type="text/css" rel="stylesheet">
+{% endblock %}
+
+
+<!--body-->
+{% block title %}
+    403 ERROR!!
+{% endblock %}
+
+{% block titleContsnts %}
+    <div class="pankuzu">
+        <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+            <i class="fas fa-home"></i>
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{% url 'Entrance' %}">
+                    <span itemprop="name">Home</span>
+                </a>
+                <meta itemprop="position" content="1" />
+            </li>
+            <li itemprop="itemListElement" itemscope
+                itemtype="https://schema.org/ListItem">
+                <a itemprop="item" href="{% url 'blogGenre' object1.category %}">
+                    <span itemprop="name">403 ERROR!!</span>
+                </a>
+                <meta itemprop="position" content="2" />
+            </li>
+        </ol>
+    </div>
+    <div class="title">
+        <h1>403 ERROR!!</h1>
+    </div>
+{% endblock %}
+
+{% block reverse %}
+    {% url 'blog' %}
+{% endblock %}
+
+{% block WhoWriteThisArticle %}
+<h2>この記事を書いた人</h2>
+<div class="WhoWriteThisArticle">
+    <div class="subIslandImg">
+        <img src="{% static 'img/purple.jpeg' %}">
+    </div>
+    <div class="mySNS">
+        <div class="SNSLOGO">
+            <a href="https://twitter.com/TestTweetBot3" style="text-decoration: none; color:black;">
+                <i class="fab fa-twitter-square fa-2x"></i>
+            </a>
+        </div>
+
+        <div class="SNSLOGO">
+            <i class="fab fa-instagram fa-2x"></i>
+        </div>
+
+        <div class="SNSLOGO">
+            <i class="fab fa-facebook-square fa-2x"></i>
+        </div>
+    </div>
+    <div class="subIslandSentence">
+        <p><span>名前</span>叢咲(むらさき)</p>
+        <p><span>趣味</span>サウナ 温泉 ビール</p>
+        <p><span>座右の銘</span>「同じアホなら、踊らにゃ損ソン」</p>
+        <p><span>興味</span>機械学習 物理(天体物理学)</p>
+        <p>初めまして、叢咲(むらさき)と言います😄 未経験から新卒でIT企業に内定キメ、今でも継続的に勉強している社会人です。</p>
+    </div>
+</div>
+{% endblock %}
