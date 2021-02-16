@@ -13,12 +13,14 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 import os
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
+"""
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'ilpfk&p8cokt%o%q@r12^46q*jxvjqyi8ixf1u#vlr=!fardi9'
 
@@ -29,7 +31,7 @@ DEBUG = False
 ALLOWED_HOSTS = [
     os.environ.get("ALLOWED_HOSTS")
 ]
-
+"""
 
 # Application definition
 
@@ -82,7 +84,7 @@ WSGI_APPLICATION = 'QuntumGun.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': "quantumdb",
+        'NAME': "QuantumDB",
         "USER": os.environ.get("DB_USER"),
         "PASSWORD": os.environ.get("DB_PASSWORD"),
         "HOST":"",
@@ -129,6 +131,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+"""
 LOGGING = {
     "version": 1,
     "disable_existing_loggers":False,
@@ -168,6 +171,8 @@ LOGGING = {
         },
     }
 }
+"""
+
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, "static"),
@@ -181,5 +186,7 @@ X_FRAME_OPTIONS = 'SAMEORIGIN'
 BACKUP_PATH = "backup/"
 NUM_SAVED_BACKUP = 30
 
+"""
 STATIC_ROOT = "/usr/share/nginx/html/static"
 MEDIA_ROOT = "/usr/share/nginx/html/media"
+"""
